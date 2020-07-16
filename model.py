@@ -27,6 +27,6 @@ pickle.dump(regr,open('model.pkl','wb'))
 
 #loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([[1.8]]))
+print(model.predict([[int(input("enter the no of year experience: "))]]))
 
 
